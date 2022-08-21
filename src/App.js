@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import background from "./background.svg";
+import header from "./header.svg";
+import timeline from "./timeline.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Barebones
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <header className="App-header">
+          <img src={header} />
+        </header>
+      </div>
     </div>
   );
 }
