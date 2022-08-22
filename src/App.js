@@ -1,6 +1,6 @@
-import background from "./background.svg";
 import header from "./header.svg";
 import timeline from "./timeline.svg";
+import whole from "./whole.svg"
 import "./App.css";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div>
       <div>
         <header className="App-header">
-          <img src={header} />
+          <img src={whole} />
         </header>
       </div>
     </div>
