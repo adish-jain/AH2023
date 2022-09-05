@@ -15,10 +15,17 @@ body{
 
 svg {
   display: inline-block;
-  transform: translateY(-10vw);
   height: 100%;
   width:100% 
 } 
+
+svg.desktop {
+  transform: translateY(-10vw);
+}
+
+svg.mobile {
+  transform: translateY(-70vw);
+}
 
 section {
   height: 100vh;
@@ -52,7 +59,12 @@ img {
   position:relative; height:100%; width:100%; 
 }
 
-img.footer {
+img.footer_desktop {
   /* transform: translateY(-10vw); */
   margin-top: -10vw;
+}
+
+img.footer_mobile {
+  /* transform: translateY(-10vw); */
+  margin-top: -70vw;
 }
