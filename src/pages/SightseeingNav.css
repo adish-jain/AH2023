@@ -1,0 +1,115 @@
+/* body {
+  background-color: black;
+  color: black;
+} */
+
+nav {
+  /* transform-origin: left top; */
+  /* transform: rotate(-90deg) translateX(-100%); */
+  width: 100vh;
+  /* height: 5%; */
+  /* height: 100%; */
+  background-color: white;
+  /* position: fixed; */
+}
+
+.title {
+  margin-left: 150px;
+  padding-top: 25px;
+  width: 25vw;
+}
+
+.sightseeingContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sightseeingNav {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  /* flex-direction: column; */
+  flex-flow: row wrap;
+  align-items: center;
+  /* justify-items: center; */
+}
+
+li {
+  /* border: 1px solid; */
+
+  height: 50px;
+  list-style: none;
+  /* color: blue; */
+  text-align: center;
+  /* transition: background 0.5s; */
+
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-decoration: none;
+  /* transform: rotate(-90deg) translateX(-100%); */
+}
+
+li:nth-child(2) {
+  /* flex: 2; */
+}
+a {
+  flex: 1;
+  color: #172421;
+  transition: color 0.5s;
+  display: block;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:active {
+  text-decoration: none;
+}
+
+a#sightseeing.active {
+  /* text-decoration: none; */
+  font-weight: bold;
+  text-decoration: underline 2px;
+  text-underline-offset: 10px;
+  text-decoration-color: #9d1d33;
+}
+
+.logo {
+  margin-right: 20px;
+  display: flex;
+  flex: 0;
+  flex-basis: 50px;
+
+  content: " ";
+  width: 50px;
+  height: 50px;
+  /* background-color: black; */
+  transform: rotate(90deg);
+}
+
+img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.image-container {
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 10vw; */
+  max-width: 70vw;
+  max-height: 70vh;
+}

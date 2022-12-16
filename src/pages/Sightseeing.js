@@ -1,8 +1,9 @@
 import React from 'react';
+import SightseeingNav from "./SightseeingNav";
 
 function Sightseeing() {
     return (
-        <h1>this is the sightseeing</h1>
+        <SightseeingNav />
     );
 }
 

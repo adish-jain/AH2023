@@ -7,8 +7,10 @@ nav {
   transform-origin: left top;
   transform: rotate(-90deg) translateX(-100%);
   width: 100vh;
+  /* height: 5%; */
   /* height: 100%; */
   background-color: white;
+  position: fixed;
 }
 
 ul {
@@ -16,6 +18,7 @@ ul {
   /* flex-direction: column; */
   flex-flow: row wrap;
   align-items: center;
+  /* justify-items: center; */
 }
 
 li {
@@ -23,7 +26,7 @@ li {
 
   height: 50px;
   list-style: none;
-  /* color: black; */
+  /* color: blue; */
   text-align: center;
   /* transition: background 0.5s; */
 
@@ -33,6 +36,7 @@ li {
   text-decoration: none;
   /* transform: rotate(-90deg) translateX(-100%); */
 }
+
 li:nth-child(2) {
   /* flex: 2; */
 }
@@ -45,12 +49,26 @@ a {
   font-weight: lighter;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+a.active {
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .logo {
+  margin-right: 20px;
   display: flex;
   flex: 0;
   flex-basis: 50px;
@@ -60,4 +78,9 @@ a:active { text-decoration: none; }
   height: 50px;
   /* background-color: black; */
   transform: rotate(90deg);
+}
+
+img {
+  max-width: 50px;
+  max-height: 50px;
 }
