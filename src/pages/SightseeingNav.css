@@ -27,7 +27,7 @@ nav {
 }
 
 .sightseeingNav {
-  width: 100%;
+  width: 99%;
 }
 
 ul {
@@ -101,15 +101,16 @@ a#sightseeing.active {
   transform: rotate(90deg);
 }
 
-img {
+/* img {
   max-width: 50px;
   max-height: 50px;
-}
+} */
 
 .image-container {
   align-items: center;
   justify-content: center;
   /* margin-left: 10vw; */
-  max-width: 70vw;
-  max-height: 70vh;
+  margin-top: 8vh;
+  max-width: 80vw;
+  /* max-height: 70vh; */
 }
