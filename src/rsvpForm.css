@@ -3,7 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* padding: 40px; */
   /* position: absolute; */
+}
+
+.google-form {
+  transform: translateY(-450px);
+}
+
+@media (max-width: 700px) {
+.rsvp-page {
+  padding: 50px;
+}
+.google-form {
+  transform: translateY(30px);
+}
 }
 
 .rsvp-form {
