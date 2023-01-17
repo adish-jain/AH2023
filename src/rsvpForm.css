@@ -9,7 +9,22 @@
 
 .google-form {
   transform: translateY(-30vw);
+  height: 250vh;
 }
+
+@media (max-width: 400px) {
+  .google-form {
+    transform: translateY(30px);
+    height: 500vh;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .google-form {
+    transform: translateY(30px);
+    height: 400vh;
+  }
+  }
 
 @media (max-width: 700px) {
 .rsvp-page {
@@ -17,6 +32,7 @@
 }
 .google-form {
   transform: translateY(30px);
+  /* height: 500vh; */
 }
 }
 

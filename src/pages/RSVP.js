@@ -6,6 +6,7 @@ import { Widget } from "@typeform/embed-react";
 
 function RSVP() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
+  // const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight)
   window.addEventListener(
     "resize",
     () => {
@@ -231,7 +232,7 @@ function RSVP() {
           marginheight="0"
           marginwidth="0"
           scrolling = "no"
-          style={{ width: "80vw", height: "250vh" }}
+          style={{ width: "80vw", height: "100%" }}
         >
           Loading…
         </iframe>
