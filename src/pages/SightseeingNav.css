@@ -14,10 +14,18 @@ nav {
 }
 
 .title {
-  margin-left: 150px;
+  margin-left: 10vw;
   padding-top: 25px;
-  width: 25vw;
+  width: 25vw;;
+  /* margin-bottom: 25px */
 }
+
+@media (max-width: 700px) {
+  .title {
+    margin-left: 100px;
+    width: 55vw;
+  }
+  }
 
 .sightseeingContainer {
   align-items: center;
@@ -26,16 +34,25 @@ nav {
   flex-direction: column;
 }
 
-.sightseeingNav {
-  width: 99%;
+.sightseeingNavigation {
+  width: 100%;
+  /* overflow-x: scroll; */
+  /* white-space: nowrap; */
+  /* min-width: 300px; */
+  /* overflow-x: scroll; */
+  /* margin-left: 150px; */
+  /* white-space: nowrap; */
+  /* display: inline-block; */
 }
 
 ul {
-  display: flex;
+  /* display: flex; */
   /* flex-direction: column; */
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
+  /* display: inline-block; */
   align-items: center;
   /* justify-items: center; */
+  /* display: inline-block; */
 }
 
 li {
@@ -51,11 +68,20 @@ li {
   align-items: center;
   flex: 1;
   text-decoration: none;
+  /* min-width: 150px; */
+  margin-left: 5px;
+  margin-right: 5px;
   /* transform: rotate(-90deg) translateX(-100%); */
+  /* width: 300px; */
+  /* white-space: nowrap; */
 }
 
 li:nth-child(2) {
+  /* min-width: 150px; */
+  margin-left: 5px;
+  margin-right: 5px;
   /* flex: 2; */
+  /* white-space: nowrap; */
 }
 a {
   flex: 1;
@@ -64,6 +90,7 @@ a {
   display: block;
   text-decoration: none;
   font-weight: lighter;
+  /* white-space: nowrap; */
 }
 
 a:link {
@@ -110,7 +137,9 @@ a#sightseeing.active {
   align-items: center;
   justify-content: center;
   /* margin-left: 10vw; */
-  margin-top: 8vh;
+  /* margin-top: 8vh; */
   max-width: 80vw;
+  height: 100%;
+  padding: 30px;
   /* max-height: 70vh; */
 }

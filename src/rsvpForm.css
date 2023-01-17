@@ -8,7 +8,7 @@
 }
 
 .google-form {
-  transform: translateY(-450px);
+  transform: translateY(-30vw);
 }
 
 @media (max-width: 700px) {

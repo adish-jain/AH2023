@@ -20,7 +20,7 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/events" class={location.pathname === "/events" ? "active" : ""}>Events</Link>
+          <Link to="/sightseeing" class={location.pathname === "/sightseeing" ? "active" : ""}>Sightseeing</Link>
         </li>
         <li>
           <Link to="/around" class={location.pathname === "/around" ? "active" : ""}>Getting around</Link>
@@ -29,7 +29,7 @@ function Navbar() {
           <Link to="/stay" class={location.pathname === "/stay" ? "active" : ""}>Where to Stay</Link>
         </li>
         <li>
-          <Link to="/sightseeing" class={location.pathname === "/sightseeing" ? "active" : ""}>Sightseeing</Link>
+          <Link to="/events" class={location.pathname === "/events" ? "active" : ""}>Events</Link>
         </li>
         <li>
           <Link to="/rsvp" class={location.pathname === "/rsvp" ? "active" : ""}>RSVP</Link>

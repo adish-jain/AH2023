@@ -17,12 +17,12 @@ function NavbarDropdown() {
         <div className={"dropdownContent"}>
           {opened ? (
               <ul>
-                <li>
+                 <li>
                   <Link
-                    to="/story"
-                    class={location.pathname === "/story" ? "active" : ""}
+                    to="/rsvp"
+                    class={location.pathname === "/rsvp" ? "active" : ""}
                   >
-                    Our Story
+                    RSVP
                   </Link>
                 </li>
                 <li>
@@ -35,20 +35,20 @@ function NavbarDropdown() {
                 </li>
                 <li>
                   <Link
-                    to="/around"
-                    class={location.pathname === "/around" ? "active" : ""}
-                  >
-                    Getting around
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="/stay"
                     class={location.pathname === "/stay" ? "active" : ""}
                   >
                     Where to Stay
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/around"
+                    class={location.pathname === "/around" ? "active" : ""}
+                  >
+                    Getting around
+                  </Link>
+                </li>          
                 <li>
                   <Link
                     to="/sightseeing"
@@ -59,12 +59,12 @@ function NavbarDropdown() {
                 </li>
                 <li>
                   <Link
-                    to="/rsvp"
-                    class={location.pathname === "/rsvp" ? "active" : ""}
+                    to="/story"
+                    class={location.pathname === "/story" ? "active" : ""}
                   >
-                    RSVP
+                    Our Story
                   </Link>
-                </li>
+                </li>  
               </ul>
           ) : (
             <div></div>

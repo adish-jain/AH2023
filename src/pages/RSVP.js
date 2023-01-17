@@ -230,7 +230,8 @@ function RSVP() {
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          style={{ width: "100vw", height: "250vh" }}
+          scrolling = "no"
+          style={{ width: "80vw", height: "250vh" }}
         >
           Loading…
         </iframe>

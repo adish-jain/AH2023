@@ -6,12 +6,13 @@ import Stay from "./pages/Stay";
 import Sightseeing from "./pages/Sightseeing";
 import Around from "./pages/Around";
 import RSVP from "./pages/RSVP";
-// import NoPage from "./pages/NoPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -21,7 +22,6 @@ function App() {
           <Route path="stay" element={<Stay />} />
           <Route path="sightseeing" element={<Sightseeing />} />
           <Route path="rsvp" element={<RSVP />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
