@@ -16,7 +16,7 @@ nav {
 .title {
   margin-left: 10vw;
   padding-top: 25px;
-  width: 25vw;;
+  width: 25vw;
   /* margin-bottom: 25px */
 }
 
@@ -36,8 +36,8 @@ nav {
 
 .sightseeingNavigation {
   width: 100%;
-  /* overflow-x: scroll; */
-  /* white-space: nowrap; */
+  overflow-x: scroll;
+  white-space: nowrap;
   /* min-width: 300px; */
   /* overflow-x: scroll; */
   /* margin-left: 150px; */

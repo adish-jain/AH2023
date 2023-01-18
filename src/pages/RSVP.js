@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import rsvpForm from "../rsvpForm";
 import "../rsvpForm.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Widget } from "@typeform/embed-react";
 
 function RSVP() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
   // const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight)
+  // var iframe = document.getElementById('frame');
   window.addEventListener(
     "resize",
     () => {
@@ -14,6 +15,44 @@ function RSVP() {
     },
     []
   );
+  // document.querySelector("iframe").addEventListener("load", function () {
+  //   window.scrollTo({
+  //     top: 0,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // });
+  // iframe.addEventListener('submit', function() {
+  //   console.log("submitted")
+  // });
+  // function GoogleLink() {
+  //   let navigate = useNavigate()
+
+  //   let openFrame = () => {
+  //     let iframe = document.createElement("iframe")
+  //     iframe.src = `https://docs.google.com/forms/d/e/1FAIpQLSeXrkEbw8if80fZoKVKuleAtW3Roxf4Gzb3MuTPgYOz4f9PGw/viewform?embedded=true`
+  //     iframe.frameBorder = "0"
+  //     iframe.id = "iframe"
+  //     iframe.style.position = "absolute"
+  //     iframe.style.zIndex = "999"
+  //     iframe.style.height = "100%"
+  //     iframe.style.width = "100%"
+  //     iframe.style.top = "0"
+  //     iframe.style.backgroundColor = "white"
+  //     iframe.style.border = "none"
+  //     document.body.prepend(iframe)
+  //     document.body.style.overflow = "hidden"
+  //   }
+
+  //   const handleSubmit = () => {
+  //     openFrame()
+  //     // history.push('/')
+  //     navigate("/")
+  //   }
+  //   return (
+  //     <button onClick={handleSubmit}>Click Here</button>
+  //   )
+  // }
   return (
     <div class="rsvp-page">
       <div class="rsvp-svg">
@@ -227,15 +266,31 @@ function RSVP() {
       </div>
       <div class="google-form">
         <iframe
+          // id="frame"
           src="https://docs.google.com/forms/d/e/1FAIpQLSeXrkEbw8if80fZoKVKuleAtW3Roxf4Gzb3MuTPgYOz4f9PGw/viewform?embedded=true"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          scrolling = "no"
-          style={{ width: "80vw", height: "100%" }}
+          scrolling="no"
+          // onload="window.parent.scrollTo(0,0)"
+          // onSubmit={() => window.parent.scrollTo(0,0)}
+          style={{ width: "80vw", height: "650vh" }}
         >
           Loading…
         </iframe>
+      </div>
+      {/* {GoogleLink()} */}
+      <div>
+        <iframe
+          style={{ borderRadius: "12px", padding: "12px" }}
+          src="https://open.spotify.com/embed/track/5qW4s2YOQNVMgQhIsclQVt?utm_source=generator"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   );
